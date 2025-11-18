@@ -1,0 +1,104 @@
+/*RESET, TIPOGRAFIA, ANIMACIONES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;   
+}
+
+:root{
+    a{
+        font-family: $fuente-general;
+        font-weight: 200;
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            color: $color-cuatro;
+        }
+    }
+}
+
+body{
+    font-family: $fuente-general;
+    font-weight: 100;
+}
+
+.div-logo {
+    a{
+        font-family: $fuente-manuscrita;
+        font-size: 3.5rem;
+
+    }
+}
+
+.titulo{
+    font-family: $fuente-titulo;
+    font-weight: 100;
+    font-size: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+.subtitulo{
+    font-family: $fuente-titulo;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.card-title{
+    font-family: $fuente-general;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-text{
+    font-family: $fuente-general;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.banner-text{
+    font-family: $fuente-titulo;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 2rem;
+    text-align: start;
+    color: white;
+}
+
+.iconos-div>i{
+    font-size: 4rem;
+}
+
+/*BANNER 3*/
+.por-que-elegirnos{
+    font-family: $fuente-manuscrita;
+}
+
+.texto-rrss{
+    font-family: $fuente-general;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer-2{
+    a{
+        font-family: $fuente-manuscrita;
+        font-size: 3rem;
+    }
+}
+
+.footer-frase{
+    font-family:"Amatic SC", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.icono-map{
+    color: $color-cuatro;
+    font-size: 2rem;
+}

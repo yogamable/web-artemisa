@@ -1,0 +1,154 @@
+/*HEADER, FOOTER, SIDEBAR, GRID, FORMS*/
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 3rem 2rem 3rem;
+    max-width: 100%;
+}
+
+.div-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.div-nav{
+    display: flex;
+    align-content: center;
+    justify-content: end;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.menu-link{
+    font-family: "EB Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.menu-link:hover{
+    color: var(--color-cuatro);
+}   
+
+
+/*MAIN*/
+
+.hero {
+    padding-top: 2rem;
+    display: flex;
+    height: 30rem;
+}
+
+.productos-destacados{
+    padding-top: 4rem; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    background: radial-gradient(#898acaa1, #FFFFFF);
+}
+
+.banner-iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    i{
+        color: white;
+    }
+}
+
+.div-banner-iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;    
+}
+.div-banner-iconos-2{
+    display: flex;
+    justify-content: center;
+    padding-left: 6rem;
+}
+.iconos-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+    padding-top: 5rem;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.footer-3{
+    p{
+        text-align: end;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: end;
+    }
+
+    i{
+        color: $color-cuatro;
+    }
+}
+
+.iconos-rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2rem;
+    align-items: end;
+    
+    i{
+        font-size: 2rem;
+        color: $color-cuatro;
+    }
+}
+
+.footer-3>ul>li>a{
+    text-decoration: none;
+    color: black;
+
+}

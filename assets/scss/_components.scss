@@ -1,0 +1,17 @@
+/*BOTONES, INPUTS, WIDGETS*/
+
+.card-body{
+    a{
+        background-color: $color-cuatro;
+        border: 2px solid $color-cuatro;
+        color: white;
+        font-weight: 400;
+
+        &:hover{
+            background-color: white;
+            border: 2px solid $color-cuatro;
+            font-weight: 400;
+        }
+
+    }
+}

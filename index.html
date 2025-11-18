@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi tienda Artemisa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="row">
         <div class="col-2 div-logo">
-            <img class="logo" src="./img/logo.png" alt="logo tienda artemisa">
+            <a href="./index.html">Artemisa</a>
         </div>
         <div class="div-nav col-10">
             <nav class="menu">
                 <ul class="menu-ul">
-                    <li><a href="./pages/agendas.html">Agendas y Planners</a></li>
-                    <li><a href="./pages/papeleria.html">Papelería</a></li>
-                    <li><a href="./pages/todo-productos.html">Todos los productos</a></li>
-                    <li><a href="#">Cómo comprar</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./pages/agendas.html" class="menu-link">Agendas y Planners</a></li>
+                    <li><a href="./pages/papeleria.html" class="menu-link">Papelería</a></li>
+                    <li><a href="./pages/todo-productos.html" class="menu-link">Todos los productos</a></li>
+                    <li><a href="#" class="menu-link">Cómo comprar</a></li>
+                    <li><a href="./pages/nosotros.html" class="menu-link">Nosotros</a></li>
+                    <li><a href="#" class="menu-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
         <div class="d-flex justify-content-center">
-            <h1 class="titulo">Papelería personalizada para organizar tus días</h1>
+            <h1 class="titulo tracking-in-expand">Papelería personalizada para organizar tus días</h1>
         </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide hero" data-bs-ride="carousel">
+
+<!-- CAROUSEL -->
+        <div id="carouselExampleAutoplaying" class="carousel slide hero fade-in" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/hero-1.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/hero-1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/hero-2.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/hero-2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/hero-3.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/hero-3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -53,9 +58,11 @@
             </button>
         </div>
 
+<!-- PRODUCTOS DESTACADOS -->
+
         <div class="productos-destacados">
-            <div class="titulo-destacados">
-                <h1>Productos destacados</h1>
+            <div>
+                <h2 class="subtitulo">Productos destacados</h2>
             </div>
             
             <div id="carouselExampleRide" class="carousel slide">
@@ -63,7 +70,15 @@
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-center gap-5">
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-1.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/hero-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <a href="#" class="btn">Ver producto</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/hero-2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -71,15 +86,7 @@
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-3.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/hero-3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -91,7 +98,7 @@
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center gap-5">
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-2.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/hero-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -99,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-3.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/hero-2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -107,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
-                                <img src="./img/hero-1.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/hero-3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -129,29 +136,30 @@
 
         </div>
 
-        <div class="container banner-iconos">
+<!-- BANNER TIPOS DE PRODUCTOS -->
+        <div class="banner banner-iconos">
             <div class="row div-banner-iconos">
                 <div class="col iconos-div">
-                    <div class="col"></div>
-                    <i class="bi bi-gift"></i><p>Regalos</p>
+                    <i class="bi bi-gift"></i><p class="banner-text">Regalos</p>
                 </div>
                 <div class="col iconos-div">
-                    <i class="bi bi-building"></i><p>Soluciones <br>para empresas</p>
+                    <i class="bi bi-building"></i><p class="banner-text">Soluciones <br>para empresas</p>
                 </div>
                 <div class="col iconos-div">
-                    <i class="bi bi-house"></i><p>Organización<br> para tu hogar</p>
+                    <i class="bi bi-house"></i><p class="banner-text">Organización<br> para tu hogar</p>
                 </div>
                 <div class="col iconos-div">
-                    <i class="bi bi-highlighter"></i><p>Materiales<br> de estudio</p>
+                    <i class="bi bi-highlighter"></i><p class="banner-text">Materiales<br> de estudio</p>
                 </div>
             </div>
         </div>
 
+<!-- MÁS PRODUCTOS DESTACADOS -->
         <div class="productos-novedosos d-flex justify-content-center">
             <div class="card mb-3" style="max-width: 60rem;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/hero-1.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="./assets/img/hero-1.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -175,7 +183,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                    <img src="./img/hero-1.jpg" class="img-fluid rounded-end" alt="...">
+                    <img src="./assets/img/hero-2.jpg" class="img-fluid rounded-end" alt="...">
                     </div>
                 </div>
             </div>
@@ -185,7 +193,7 @@
             <div class="card mb-3" style="max-width: 60rem;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/hero-1.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -198,42 +206,43 @@
             </div>
         </div>
 
-        <div class="container banner-iconos col">
-            <div class="row div-banner-iconos">
-                <div class="col"><h3>¿Por qué elegirnos?</h3></div>
+<!-- BANNER POR QUÉ ELEGIRNOS -->
+        <div class="banner banner-iconos">
+            <div class="row div-banner-iconos-2">
                 <div class="col iconos-div">
-                    <div class="col"></div>
-                    <i class="bi bi-rainbow"></i><p>Personalizamos tus productos</p>
+                    <i class="bi bi-rainbow"></i><p class="banner-text">Personalizamos tus productos</p>
                 </div>
                 <div class="col iconos-div">
-                    <i class="bi bi-check2-circle"></i><p>Trabajamos con materiales de buena calidad</p>
+                    <i class="bi bi-check2-circle"></i><p class="banner-text">Trabajamos con materiales de buena calidad</p>
                 </div>
                 <div class="col iconos-div">
-                    <i class="bi bi-truck"></i><p>Llegamos<br> a tiempo</p>
+                    <i class="bi bi-truck"></i><p class="banner-text">Llegamos<br> a tiempo</p>
                 </div>
             </div>
         </div>
 
     </main>
 
+<!-- FOOTER -->
     <footer>
-        <div class="col-2 footer-1"><img src="./img/logo.png" alt="logo" class="logo"></div>
-        <div class="col-8 footer-2">
-            <div>
-                <p>Papelería personalizada para organizar tus días</p>
-            </div>
+        <div class="col-2 footer-1">
+            <p class="texto-rrss">Encuéntranos en nuestras redes</p>
             <div class="iconos-rrss">
                 <i class="bi bi-instagram"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-whatsapp"></i>
             </div>
         </div>
+        <div class="col-8 footer-2">
+                <a href="./index.html">Artemisa</a>
+                <p class="footer-frase">Papelería personalizada para organizar tus días</p>
+        </div>
         <div class="footer-3 col-2">
+            <p><i class="bi bi-geo-alt-fill"></i> Santiago, Chile</p>
             <ul>
                 <li><a href="#">Condiciones de compra</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><i class="bi bi-geo-alt-fill"></i>Santiago, Chile</li>
             </ul>
         </div>
     </footer>
