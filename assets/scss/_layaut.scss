@@ -30,6 +30,7 @@ header {
 .menu-ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 2rem;
     padding-top: 1rem;
 }
@@ -37,11 +38,25 @@ header {
 .menu-link{
     font-family: "EB Garamond", serif;
     font-size: 1.2rem;
+
+    i{
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 .menu-link:hover{
     color: var(--color-cuatro);
-}   
+}
+
+/*ASIDE CARRITO*/
+.div-img-carrito{
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 
 
 /*MAIN*/
@@ -53,44 +68,47 @@ header {
 }
 
 .productos-destacados{
-    padding-top: 4rem; 
+    padding: 4rem 0 4rem 0; 
     display: block;
     justify-content: center;
     align-items: center;
 }
 
-.banner{
-    background: radial-gradient(#898acaa1, #FFFFFF);
-}
-
 .banner-iconos{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    justify-content: space-around;
+    align-items: center;   
+    padding: 2rem 10rem 2rem 10rem;
+
+    background: radial-gradient(#898acaa1, #FFFFFF);
 
     i{
         color: white;
     }
 }
 
-.div-banner-iconos{
+.banner-iconos-2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;    
+    padding: 2rem 10rem 2rem 14rem;
+
+    background: radial-gradient(#898acaa1, #FFFFFF);
+
+    i{
+        color: white;
+    }
 }
-.div-banner-iconos-2{
-    display: flex;
-    justify-content: center;
-    padding-left: 6rem;
+
+.productos-novedosos{
+    padding: 2rem 2rem;
 }
+
 .iconos-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /*FOOTER*/

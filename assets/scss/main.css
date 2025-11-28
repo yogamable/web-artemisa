@@ -97,6 +97,21 @@ body {
   font-size: 2rem;
 }
 
+/*CARD-CARRITO*/
+.card-carrito {
+  margin: 0.5rem;
+}
+.card-carrito h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.detalles-producto p {
+  font-size: 0.9rem;
+  line-height: 0.3rem;
+}
+
 /*BOTONES, INPUTS, WIDGETS*/
 .card-body a {
   background-color: #898aca;
@@ -141,6 +156,7 @@ header {
 .menu-ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 2rem;
   padding-top: 1rem;
 }
@@ -149,9 +165,20 @@ header {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
 }
+.menu-link i {
+  font-size: 2rem;
+  text-align: center;
+}
 
 .menu-link:hover {
   color: var(--color-cuatro);
+}
+
+/*ASIDE CARRITO*/
+.div-img-carrito img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*MAIN*/
@@ -162,39 +189,36 @@ header {
 }
 
 .productos-destacados {
-  padding-top: 4rem;
+  padding: 4rem 0 4rem 0;
   display: block;
   justify-content: center;
   align-items: center;
 }
 
-.banner {
-  background: radial-gradient(rgba(137, 138, 202, 0.631372549), #FFFFFF);
-}
-
 .banner-iconos {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding: 2rem 10rem 2rem 10rem;
+  background: radial-gradient(rgba(137, 138, 202, 0.631372549), #FFFFFF);
 }
 .banner-iconos i {
   color: white;
 }
 
-.div-banner-iconos {
+.banner-iconos-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  padding: 2rem 10rem 2rem 14rem;
+  background: radial-gradient(rgba(137, 138, 202, 0.631372549), #FFFFFF);
+}
+.banner-iconos-2 i {
+  color: white;
 }
 
-.div-banner-iconos-2 {
-  display: flex;
-  justify-content: center;
-  padding-left: 6rem;
+.productos-novedosos {
+  padding: 2rem 2rem;
 }
 
 .iconos-div {

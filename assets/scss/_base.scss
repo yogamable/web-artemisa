@@ -102,3 +102,18 @@ body{
     color: $color-cuatro;
     font-size: 2rem;
 }
+
+/*CARD-CARRITO*/
+.card-carrito{
+    margin: .5rem;
+    h5{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-bottom: .5rem;
+    }
+}
+
+.detalles-producto p{
+    font-size: .9rem;
+    line-height: .3rem;
+}

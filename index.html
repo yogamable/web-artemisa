@@ -25,17 +25,22 @@
                     <li><a href="#" class="menu-link">Cómo comprar</a></li>
                     <li><a href="./pages/nosotros.html" class="menu-link">Nosotros</a></li>
                     <li><a href="#" class="menu-link">Contacto</a></li>
+                    <li><a href="#" class="menu-link" data-bs-toggle="offcanvas" data-bs-target="#carritooffcanvas">
+                            <i class="bi bi-cart4 icono-carrito"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    
     <main>
         <div class="d-flex justify-content-center">
             <h1 class="titulo tracking-in-expand">Papelería personalizada para organizar tus días</h1>
         </div>
-
-<!-- CAROUSEL -->
+        
+        <!-- CAROUSEL -->
         <div id="carouselExampleAutoplaying" class="carousel slide hero fade-in" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -57,9 +62,9 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-<!-- PRODUCTOS DESTACADOS -->
-
+        
+        <!-- PRODUCTOS DESTACADOS -->
+        
         <div class="productos-destacados">
             <div>
                 <h2 class="subtitulo">Productos destacados</h2>
@@ -135,95 +140,137 @@
             </div>
 
         </div>
-
-<!-- BANNER TIPOS DE PRODUCTOS -->
-        <div class="banner banner-iconos">
-            <div class="row div-banner-iconos">
-                <div class="col iconos-div">
-                    <i class="bi bi-gift"></i><p class="banner-text">Regalos</p>
-                </div>
-                <div class="col iconos-div">
-                    <i class="bi bi-building"></i><p class="banner-text">Soluciones <br>para empresas</p>
-                </div>
-                <div class="col iconos-div">
-                    <i class="bi bi-house"></i><p class="banner-text">Organización<br> para tu hogar</p>
-                </div>
-                <div class="col iconos-div">
-                    <i class="bi bi-highlighter"></i><p class="banner-text">Materiales<br> de estudio</p>
+        
+        <!-- BANNER TIPOS DE PRODUCTOS -->
+        <div class="banner-iconos row">
+            <div class="col iconos-div">
+                <i class="bi bi-gift"></i><p class="banner-text">Regalos<br> prácticos</p>
+            </div>
+            <div class="col iconos-div">
+                <i class="bi bi-building"></i><p class="banner-text">Soluciones <br>para empresas</p>
+            </div>
+            <div class="col iconos-div">
+                <i class="bi bi-house"></i><p class="banner-text">Organización<br> para tu hogar</p>
+            </div>
+            <div class="col iconos-div">
+                <i class="bi bi-highlighter"></i><p class="banner-text">Materiales<br> de estudio</p>
+            </div>     
+        </div>
+        
+        <!-- MÁS PRODUCTOS DESTACADOS -->
+        <div class="productos-novedosos">
+            
+            <div class="producto-novedoso d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 60rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/img/hero-1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-<!-- MÁS PRODUCTOS DESTACADOS -->
-        <div class="productos-novedosos d-flex justify-content-center">
-            <div class="card mb-3" style="max-width: 60rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="./assets/img/hero-1.jpg" class="img-fluid rounded-start" alt="...">
+            
+            <div class="producto-novedoso d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 60rem;">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./assets/img/hero-2.jpg" class="img-fluid rounded-end" alt="...">
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
+                </div>
+            </div>
+            
+            <div class="producto-novedoso d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 60rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="productos-novedosos d-flex justify-content-center">
-            <div class="card mb-3" style="max-width: 60rem;">
+        <!-- BANNER POR QUÉ ELEGIRNOS -->
+        <div class="banner-iconos-2 row">
+            
+            <div class="col iconos-div">
+                <i class="bi bi-rainbow"></i><p class="banner-text">Personalizamos tus productos</p>
+            </div>
+            <div class="col iconos-div">
+                <i class="bi bi-check2-circle"></i><p class="banner-text">Usamos materiales de buena calidad</p>
+            </div>
+            <div class="col iconos-div">
+                <i class="bi bi-truck"></i>
+                <p class="banner-text">Llegamos a tiempo</p>
+            </div>
+            
+        </div>
+        
+    </main>
+    
+    <!--ASIDE CARRITO-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritooffcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Tu carrito de cotización</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="sin-carrito">
+            <h5>¡Aún no has elegido tus productos! <i class="bi bi-emoji-frown"></i></h5>
+        </div>
+
+        <div class="offcanvas-body">
+<!--CARD CARRITO-->   
+            <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
                     <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                    <img src="./assets/img/hero-2.jpg" class="img-fluid rounded-end" alt="...">
-                    </div>
                 </div>
             </div>
         </div>
+    
+    <!--BOTON CARRITO-->
+    <div>
+        <button type="button" class="btn btn-dark">Enviar cotización</button>
+    </div>
 
-        <div class="productos-novedosos d-flex justify-content-center">
-            <div class="card mb-3" style="max-width: 60rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!-- BANNER POR QUÉ ELEGIRNOS -->
-        <div class="banner banner-iconos">
-            <div class="row div-banner-iconos-2">
-                <div class="col iconos-div">
-                    <i class="bi bi-rainbow"></i><p class="banner-text">Personalizamos tus productos</p>
-                </div>
-                <div class="col iconos-div">
-                    <i class="bi bi-check2-circle"></i><p class="banner-text">Trabajamos con materiales de buena calidad</p>
-                </div>
-                <div class="col iconos-div">
-                    <i class="bi bi-truck"></i><p class="banner-text">Llegamos<br> a tiempo</p>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-<!-- FOOTER -->
+    </div>
+    
+    <!-- FOOTER -->
     <footer>
         <div class="col-2 footer-1">
             <p class="texto-rrss">Encuéntranos en nuestras redes</p>
