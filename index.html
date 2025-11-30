@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/main.js"></script>
 </head>
 
 <body>
-    <header class="row">
+    <header>
         <div class="col-2 div-logo">
             <a href="./index.html">Artemisa</a>
         </div>
@@ -22,9 +23,8 @@
                     <li><a href="./pages/agendas.html" class="menu-link">Agendas y Planners</a></li>
                     <li><a href="./pages/papeleria.html" class="menu-link">Papelería</a></li>
                     <li><a href="./pages/todo-productos.html" class="menu-link">Todos los productos</a></li>
-                    <li><a href="#" class="menu-link">Cómo comprar</a></li>
-                    <li><a href="./pages/nosotros.html" class="menu-link">Nosotros</a></li>
-                    <li><a href="#" class="menu-link">Contacto</a></li>
+                    <li><a href="#" class="menu-link" data-bs-toggle="modal" data-bs-target="#comoComprar">Cómo comprar</a></li>
+                    <li><a href="#" class="menu-link" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a></li>
                     <li><a href="#" class="menu-link" data-bs-toggle="offcanvas" data-bs-target="#carritooffcanvas">
                             <i class="bi bi-cart4 icono-carrito"></i>
                         </a>
@@ -32,8 +32,84 @@
                 </ul>
             </nav>
         </div>
-    </header>
 
+<!--MODAL CONTACTO-->
+
+        <div class="modal" tabindex="-1" id="modalContacto">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contáctanos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-name">Nombre:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn border border-2">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="border-top pt-3">
+                    <p class="text-center">¡Tu mensaje ha sido enviado, pronto te responderemos!</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+<!--MODAL COMO COMPRAR-->
+        <div class="modal modal-lg" tabindex="-1" id="comoComprar">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cómo comprar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tenemos productos listos para su entrega y otros personalizables.</p>
+                        <ul>
+                            <li>
+                                <p>Elige tus productos y agregalos al carrito</p>
+                            </li>
+                            <li>
+                                <p>Envía la cotización haciendo click en el botón del carrito y nos contactaremos contigo a la brevedad para contarte modo de pago, acordar el plazo estimado de entrega y la modalidad.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Condiciones de Compra</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <h5>Sobre cambios y devoluciones</h5>
+                            <li>Los cambios se harán exclusivamente por fallas con el producto. Para ello debes enviarnos un mensaje al whatsapp de la tienda con un <span> VIDEO abriendo el paquete por primera vez</span>, para asegurarnos que no fue una mala manipulación la que lo dañó.</li>
+                            <li>No se aceptan devoluciones.</li>
+                        </ul>
+                        <ul>
+                            <h5>Sobre el envío</h5>
+                            <li>Asegurate de estar dentro del radio de entregas.</li>
+                            <li>El valor del delivery depende del sector de envío, al igual que los días de entrega.</li>
+                            <li>El pago del delivery debe ser vía transferencia junto con el pago de tu compra.</li>
+                            <li>Una vez recibido el pago de la compra agendaremos el envío de esta, mediante la gestión de "Despachos Express 11".</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
     
     <main>
         <div class="d-flex justify-content-center">
@@ -142,7 +218,7 @@
         </div>
         
         <!-- BANNER TIPOS DE PRODUCTOS -->
-        <div class="banner-iconos row">
+        <div class="banner-iconos row w-100">
             <div class="col iconos-div">
                 <i class="bi bi-gift"></i><p class="banner-text">Regalos<br> prácticos</p>
             </div>
@@ -213,7 +289,7 @@
         </div>
         
         <!-- BANNER POR QUÉ ELEGIRNOS -->
-        <div class="banner-iconos-2 row">
+        <div class="banner-iconos-2 row w-100">
             
             <div class="col iconos-div">
                 <i class="bi bi-rainbow"></i><p class="banner-text">Personalizamos tus productos</p>
@@ -231,14 +307,13 @@
     </main>
     
     <!--ASIDE CARRITO-->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritooffcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="carritooffcanvas" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasLabel">Tu carrito de cotización</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="sin-carrito">
-            <h5>¡Aún no has elegido tus productos! <i class="bi bi-emoji-frown"></i></h5>
+        </div>        
+        <div class="sin-carrito offcanvas-header">
+            <h5 class="offcanvas-title">¡Aún no has elegido tus productos! <i class="bi bi-emoji-frown"></i></h5>
         </div>
 
         <div class="offcanvas-body">
@@ -261,12 +336,120 @@
                     </div>
                 </div>
             </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 div-img-carrito">
+                        <img src="./assets/img/hero-3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-carrito">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <div class="detalles-producto">
+                                <p class="card-text">Cantidad:</p>
+                                <p class="card-text">Precio: $</p>
+                                <p class="card-text">Color:</p>
+                                <p class="card-text">Comentario:</p>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     
     <!--BOTON CARRITO-->
-    <div>
-        <button type="button" class="btn btn-dark">Enviar cotización</button>
-    </div>
+        <div class="d-flex justify-content-center p-4">
+            <button type="button" class="btn btn-dark w-100">Enviar cotización</button>
+        </div>
 
     </div>
     
@@ -287,9 +470,9 @@
         <div class="footer-3 col-2">
             <p><i class="bi bi-geo-alt-fill"></i> Santiago, Chile</p>
             <ul>
-                <li><a href="#">Condiciones de compra</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#comoComprar">Condiciones de compra</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a></li>
             </ul>
         </div>
     </footer>
