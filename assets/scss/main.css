@@ -112,6 +112,10 @@ body {
   line-height: 0.3rem;
 }
 
+.mensaje-sin-carrito {
+  font-size: 1rem;
+}
+
 /*BOTONES, INPUTS, WIDGETS*/
 .card-body a {
   background-color: #898aca;
@@ -127,7 +131,7 @@ body {
 
 /*HEADER, FOOTER, SIDEBAR, GRID, FORMS*/
 /*HEADER*/
-header {
+.header-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -219,7 +223,7 @@ header {
 }
 
 .productos-novedosos {
-  padding: 2rem 2rem;
+  padding: 4rem 2rem 2rem;
 }
 
 .iconos-div {

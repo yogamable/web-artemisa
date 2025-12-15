@@ -1,7 +1,7 @@
 /*HEADER, FOOTER, SIDEBAR, GRID, FORMS*/
 
 /*HEADER*/
-header {
+.header-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,7 +102,7 @@ header {
 }
 
 .productos-novedosos{
-    padding: 2rem 2rem;
+    padding: 4rem 2rem 2rem;
 }
 
 .iconos-div {

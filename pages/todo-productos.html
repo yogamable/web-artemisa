@@ -9,21 +9,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script defer src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header-menu">
         <div class="col-2 div-logo">
-            <a href="../index.html">Artemisa</a>
+            <a href="/index.html">Artemisa</a>
         </div>
         <div class="div-nav col-10">
             <nav class="menu">
                 <ul class="menu-ul">
-                    <li><a href="../pages/agendas.html" class="menu-link">Agendas y Planners</a></li>
-                    <li><a href="../pages/papeleria.html" class="menu-link">Papelería</a></li>
-                    <li><a href="../pages/todo-productos.html" class="menu-link">Todos los productos</a></li>
-                    <li><a href="#" class="menu-link" data-bs-toggle="modal" data-bs-target="#comoComprar">Cómo comprar</a></li>
-                    <li><a href="#" class="menu-link" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a></li>
+                    <li><a href="/index.html" class="menu-link">Inicio</a></li>
+                    <li><a href="/pages/agendas.html" class="menu-link">Agendas y Planners</a></li>
+                    <li><a href="/pages/papeleria.html" class="menu-link">Papelería</a></li>
+                    <li><a href="/pages/todo-productos.html" class="menu-link">Todos los productos</a></li>
+                    <li><a href="#" class="menu-link menu-link-comprar" data-bs-toggle="modal" data-bs-target="#modalComprar">Cómo comprar</a></li>
+                    <li><a href="#" class="menu-link menu-link-contacto" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a></li>
                     <li><a href="#" class="menu-link" data-bs-toggle="offcanvas" data-bs-target="#carritooffcanvas">
                             <i class="bi bi-cart4 icono-carrito"></i>
                         </a>
@@ -31,118 +32,92 @@
                 </ul>
             </nav>
         </div>
+    </header>
 
-<!--MODAL CONTACTO-->
+    <!--MODAL COMO COMPRAR-->
 
-        <div class="modal" tabindex="-1" id="modalContacto">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Contáctanos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal modal-lg fade" tabindex="-1" id="modalComprar">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cómo comprar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-name">Nombre:</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <textarea class="form-control" id="mensaje" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn border border-2">Enviar</button>
-                        </div>
-                    </form>
+                    <p>Tenemos productos listos para su entrega y otros personalizables.</p>
+                    <ul>
+                        <li>
+                            <p>Elige tus productos y agregalos al carrito</p>
+                        </li>
+                        <li>
+                            <p>Envía la cotización haciendo click en el botón del carrito y nos contactaremos contigo a la brevedad para contarte modo de pago, acordar el plazo estimado de entrega y la modalidad.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="border-top pt-3">
-                    <p class="text-center">¡Tu mensaje ha sido enviado, pronto te responderemos!</p>
+                <div class="modal-header">
+                    <h5 class="modal-title">Condiciones de Compra</h5>
                 </div>
+                <div class="modal-body">
+                    <ul>
+                        <h5>Sobre cambios y devoluciones</h5>
+                        <li>Los cambios se harán exclusivamente por fallas con el producto. Para ello debes enviarnos un mensaje al whatsapp de la tienda con un <span> VIDEO abriendo el paquete por primera vez</span>, para asegurarnos que no fue una mala manipulación la que lo dañó.</li>
+                        <li>No se aceptan devoluciones.</li>
+                    </ul>
+                    <ul>
+                        <h5>Sobre el envío</h5>
+                        <li>Asegurate de estar dentro del radio de entregas.</li>
+                        <li>El valor del delivery depende del sector de envío, al igual que los días de entrega.</li>
+                        <li>El pago del delivery debe ser vía transferencia junto con el pago de tu compra.</li>
+                        <li>Una vez recibido el pago de la compra agendaremos el envío de esta, mediante la gestión de "Despachos Express 11".</li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-<!--MODAL COMO COMPRAR-->
-        <div class="modal modal-lg" tabindex="-1" id="comoComprar">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Cómo comprar</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!--MODAL CONTACTO-->
+
+    <div class="modal fade" tabindex="-1" id="modalContacto">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contáctanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" required>
                     </div>
-                    <div class="modal-body">
-                        <p>Tenemos productos listos para su entrega y otros personalizables.</p>
-                        <ul>
-                            <li>
-                                <p>Elige tus productos y agregalos al carrito</p>
-                            </li>
-                            <li>
-                                <p>Envía la cotización haciendo click en el botón del carrito y nos contactaremos contigo a la brevedad para contarte modo de pago, acordar el plazo estimado de entrega y la modalidad.</p>
-                            </li>
-                        </ul>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
                     </div>
-                    <div class="modal-header">
-                        <h5 class="modal-title">Condiciones de Compra</h5>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" required></textarea>
                     </div>
-                    <div class="modal-body">
-                        <ul>
-                            <h5>Sobre cambios y devoluciones</h5>
-                            <li>Los cambios se harán exclusivamente por fallas con el producto. Para ello debes enviarnos un mensaje al whatsapp de la tienda con un <span> VIDEO abriendo el paquete por primera vez</span>, para asegurarnos que no fue una mala manipulación la que lo dañó.</li>
-                            <li>No se aceptan devoluciones.</li>
-                        </ul>
-                        <ul>
-                            <h5>Sobre el envío</h5>
-                            <li>Asegurate de estar dentro del radio de entregas.</li>
-                            <li>El valor del delivery depende del sector de envío, al igual que los días de entrega.</li>
-                            <li>El pago del delivery debe ser vía transferencia junto con el pago de tu compra.</li>
-                            <li>Una vez recibido el pago de la compra agendaremos el envío de esta, mediante la gestión de "Despachos Express 11".</li>
-                        </ul>
+                    <div class="text-center">
+                        <button type="submit" class="btn border border-2">Enviar</button>
                     </div>
-                </div>
+                </form>
+            </div>
+            <div class="border-top pt-3">
+                <p class="text-center">¡Tu mensaje ha sido enviado, pronto te responderemos!</p>
+            </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <main>
         <div class="pagina-papeleria">
-            <div class="productos-papeleria">
+            <div>
                 <div>
                     <h2 class="subtitulo">Todos nuestros Productos</h2>
                 </div>
                 
-                <div class="cards-papeleria">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/hero-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn">Ver producto</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/hero-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/hero-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>     
-                        
-                         
-                </div>
+                <div class="carga-todo-productos"></div>
             </div>  
         </div>
     </main>

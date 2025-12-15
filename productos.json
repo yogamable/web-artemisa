@@ -1,0 +1,144 @@
+[
+    {
+        "id": "1",
+        "nombre": "Agenda lunar",
+        "imagen": "../assets/img/hero-1.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "2",
+        "nombre": "Agenda solar",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "3",
+        "nombre": "Agenda universal",
+        "imagen": "../assets/img/hero-3.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "4",
+        "nombre": "Agenda astral",
+        "imagen": "../assets/img/hero-1.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "5",
+        "nombre": "Papeles para recados",
+        "imagen": "../assets/img/hero-3.jpg",
+        "precio": 5000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "6",
+        "nombre": "Esquelas",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 3000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "7",
+        "nombre": "Stickers",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 2000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "8",
+        "nombre": "Agenda lunar",
+        "imagen": "../assets/img/hero-1.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "9",
+        "nombre": "Agenda solar",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "10",
+        "nombre": "Agenda universal",
+        "imagen": "../assets/img/hero-3.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "11",
+        "nombre": "Agenda astral",
+        "imagen": "../assets/img/hero-1.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "12",
+        "nombre": "Papeles para recados",
+        "imagen": "../assets/img/hero-3.jpg",
+        "precio": 5000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "13",
+        "nombre": "Esquelas",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 3000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "14",
+        "nombre": "Stickers",
+        "imagen": "../assets/img/hero-2.jpg",
+        "precio": 2000,
+        "categoria": "papeleria",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam distinctio",
+        "destacados": true,
+        "novedosos": false
+    }
+    
+    
+]
